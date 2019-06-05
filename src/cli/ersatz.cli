@@ -1,0 +1,12 @@
+name: required-by-clap
+args:
+    - MAIN_PATH:
+        help: Path to .ers file
+        required: false
+        default_value: data/example.ers
+        index: 1
+    - verbose:
+        help: Prints more information
+        long: verbose
+        short: v
+        multiple: true

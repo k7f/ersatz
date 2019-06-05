@@ -1,0 +1,22 @@
+[workspace]
+
+[package]
+
+name = "ersatz"
+version = "0.0.1"
+description = "Entity-Reaction Systems: analysis, transformation, synthesis"
+authors = ["k7f"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/k7f/ersatz"
+readme = "README.md"
+
+[dependencies]
+
+clap = { version = "2.33", features = ["yaml"] }
+bit-set = "0.5"
+
+[[bin]]
+
+name = "ersatz"
+path = "src/cli/main.rs"
