@@ -3,8 +3,8 @@
 [package]
 
 name = "ersatz"
-version = "0.0.1"
-description = "Entity-Reaction Systems: analysis, transformation, synthesis"
+version = "0.0.2-pre"
+description = "Entity-Reaction Systems: Analysis, Transformation, Synthesis"
 authors = ["k7f"]
 edition = "2018"
 license = "MIT"
@@ -13,8 +13,12 @@ readme = "README.md"
 
 [dependencies]
 
+log = "0.4"
+fern = { version = "0.6", features = ["colored"] }
 clap = { version = "2.33", features = ["yaml"] }
+glob = "0.3"
 bit-set = "0.5"
+wast = { version = "14.0", default-features = false }
 
 [[bin]]
 
